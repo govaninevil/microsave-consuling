@@ -1,0 +1,80 @@
+@import "fonts.css";
+
+@media screen and (max-width: 1919px) {
+    :root {
+        --font-size-twenty-four: 22px;
+        --common-space: 25px;
+        --title-margin-bottom: 40px;
+        --custom-container-left: 100px;
+    }
+}
+
+@media screen and (max-width: 1599px) {
+    :root {
+        --banner-size: 550px;
+        --font-size-twenty-four: 18px;
+        --custom-container-left: 80px;
+        --title-margin-bottom: 30px;
+        --common-space: 22px;
+    }
+}
+
+@media screen and (max-width: 1439px) {
+    :root {
+        --custom-container-left: 60px;
+    }
+}
+
+@media screen and (max-width: 1365px) {
+    :root {
+        --banner-size: 510px;
+        --common-space: 20px;
+        --title-margin-bottom: 22px;
+        --custom-container-left: 50px;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    :root {
+        --banner-size: 480px;
+        --common-space: 15px;
+        --font-size-twenty-four: 16px;
+        --title-margin-bottom: 20px;
+        --common-space: 18px;
+        --custom-container-left: 40px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    :root{
+        --font-size-twenty-four:16px;
+        --banner-size: 400px;
+        --title-margin-bottom: 16px;
+        --common-space: 16px;
+        --custom-container-left: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    :root{
+        --banner-size: 320px;
+        --font-size-twenty-four:14px;
+        --custom-container-left: 20px;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    :root{
+        --banner-size: 260px;
+        --common-space: 12px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    :root{
+        --title-margin-bottom: 12px;
+    }
+}
+
+
+@media screen and (max-width: 359px) {}

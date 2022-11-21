@@ -1,0 +1,36 @@
+@import "fonts.css";
+
+:root {
+    // font
+    --font-family: "Source Sans Pro";
+
+    // common-color
+    --primary-color: #284181;
+    --secondary-color: #00bfdf;
+    --secondary-light-color: #6ecfe0;
+    --active-btn: #f79433;
+    --text-color: #5a5a5a;
+    --yellow-color: #fdb913;
+    --background-color: #f4f4f4;
+    --font-color: #5a5a5a;
+
+    // img
+    --background: no-repeat cover center;
+
+    // margin
+    --custom-container-left: 120px;
+    --title-margin-bottom: 50px;
+    --common-space: 30px;
+
+    //size
+    --banner-size: 740px;
+
+    // font-size
+    --font-size-twenty-four: 24px;
+    --font-weight-six: 600;
+    --line-heigh-thirty: 30px;
+
+    // border-radius
+    --border-radius:8px;
+}
+

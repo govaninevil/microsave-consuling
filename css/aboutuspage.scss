@@ -1,0 +1,911 @@
+@import "fonts.css";
+@import "variables.scss";
+
+.inner-banner-section {
+    background: url("../images/about-banner.jpg");
+    // height: 550px;
+    background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center center;
+    -o-background-position: center center;
+    -ms-background-position: center center;
+    -moz-background-position: center center;
+    -webkit-background-position: center center;
+    background-repeat: no-repeat;
+    -o-background-repeat: no-repeat;
+    -ms-background-repeat: no-repeat;
+    -moz-background-repeat: no-repeat;
+    -webkit-background-repeat: no-repeat;
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 60%;
+        height: 100%;
+        background: linear-gradient(90deg, #284181 38.02%, rgba(0, 44, 156, 0) 100%);
+    }
+    .content-box {
+        position: relative;
+        z-index: 1;
+        h2 {
+            font-size: 60px;
+            color: #fff;
+            font-weight: 600;
+            line-height: 70px;
+            margin-bottom: 16px;
+        }
+        p {
+            font-size: 24px;
+            color: #fff;
+            line-height: 35px;
+            width: 45%;
+            font-weight: 600;
+        }
+    }
+}
+
+.wo-we-are-section {
+    .inner-box {
+        display: flex;
+        gap: 80px;
+        align-items: center;
+        .left-box {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+        .right-box {
+            width: 100%;
+            p {
+                color: var(--font-color);
+                font-size: 22px;
+                line-height: 32px;
+                margin-bottom: 20px;
+                font-weight: normal;
+                a {
+                    color: var(--active-btn);
+                }
+                &:last-of-type {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+
+.msc-number-section {
+    background: #f4f4f4;
+    .inner-box {
+        display: inline-flex;
+        gap: 50px;
+        flex-wrap: wrap;
+        .number-box {
+            flex: 0 0 22%;
+            h3 {
+                color: var(--secondary-color);
+                font-size: 60px;
+                font-weight: var(--font-weight-six);
+                margin-bottom: 10px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid var(--font-color);
+            }
+            p {
+                color: var(--font-color);
+            }
+        }
+    }
+}
+
+.inspiration-section {
+    background: url("../images/mission-bg.png");
+    height: 720px;
+    position: relative;
+    background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center center;
+    -o-background-position: center center;
+    -ms-background-position: center center;
+    -moz-background-position: center center;
+    -webkit-background-position: center center;
+    background-repeat: no-repeat;
+    -o-background-repeat: no-repeat;
+    -ms-background-repeat: no-repeat;
+    -moz-background-repeat: no-repeat;
+    -webkit-background-repeat: no-repeat;
+    .inner-box {
+        display: flex;
+        gap: 105px;
+        .left-box {
+            width: 35%;
+        }
+    }
+    .right-box {
+        .accordion-item {
+            background: transparent;
+            border: none;
+            margin-bottom: 50px;
+            h2 {
+                font-size: 36px;
+                position: relative;
+                .accordion-button:not(.collapsed) {
+                    color: #00bfdf;
+                    background-color: transparent;
+                    box-shadow: none;
+                }
+                .accordion-button {
+                    font-size: 36px;
+                    font-weight: 600;
+                    color: #00bfdf;
+                    padding: 0 0 15px;
+                    border: none;
+                    background: transparent;
+                    box-shadow: none;
+
+                    &:after {
+                        content: none;
+                    }
+
+                    a {
+                        position: absolute;
+                        right: 0;
+                        bottom: -22px;
+                        width: 46px;
+                        height: 46px;
+                        border-radius: 50%;
+                        background: #f79433;
+                        color: #fff;
+                        text-align: center;
+                        svg {
+                            width: 32px;
+                            height: 32px;
+                        }
+                    }
+                    .bi-plus-lg {
+                        display: none;
+                    }
+                    .bi-dash-lg {
+                        display: block;
+                    }
+                    svg {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        margin: 0 auto;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+                .accordion-button.collapsed {
+                    .bi-plus-lg {
+                        display: block;
+                    }
+                    .bi-dash-lg {
+                        display: none;
+                    }
+                    svg {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        margin: 0 auto;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+                p {
+                    color: #fff;
+                    font-weight: normal;
+                    width: 80%;
+                    font-size: 20px;
+                    line-height: 27px;
+                }
+            }
+            .accordion-body {
+                padding: 1rem 0;
+                color: #fff;
+                font-size: 20px;
+                width: 81%;
+            }
+        }
+    }
+}
+
+.meet-team-section {
+    .inner-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 30px;
+        .team-box {
+            border-radius: 6px;
+            -o-border-radius: 6px;
+            -ms-border-radius: 6px;
+            -moz-border-radius: 6px;
+            -webkit-border-radius: 6px;
+            .box {
+                border-bottom-left-radius: 6px;
+                border-bottom-right-radius: 6px;
+                background: #e6e7e8;
+                opacity: 0.9;
+                position: absolute;
+                width: 100%;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                padding: 20px;
+                h3 {
+                    color: var(--font-color);
+                    font-size: 24px;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                }
+                p {
+                    font-size: 20px;
+                    font-weight: normal;
+                    color: var(--font-color);
+                }
+            }
+            img {
+                width: 100%;
+                transition: all 0.4s ease-out;
+            }
+            .inner-con {
+                width: 100%;
+                position: relative;
+                overflow: hidden;
+                border-radius: 6px;
+                -o-border-radius: 6px;
+                -ms-border-radius: 6px;
+                -moz-border-radius: 6px;
+                -webkit-border-radius: 6px;
+
+                &:hover {
+                    img {
+                        transition: all 0.4s ease-out;
+                        -o-transition: all 0.4s ease-out;
+                        -ms-transition: all 0.4s ease-out;
+                        -moz-transition: all 0.4s ease-out;
+                        -webkit-transition: all 0.4s ease-out;
+                        transform: scale(1.1);
+                        overflow: hidden;
+                        border-radius: 6px;
+                        -o-border-radius: 6px;
+                        -ms-border-radius: 6px;
+                        -moz-border-radius: 6px;
+                        -webkit-border-radius: 6px;
+                    }
+                }
+            }
+            &:last-of-type {
+                padding-bottom: 0;
+            }
+        }
+    }
+}
+.our-brand-section {
+    background: #f4f4f4;
+    .inner-box {
+        display: flex;
+        width: 75%;
+        margin: 0 auto;
+        .box {
+            background: #fff;
+            padding: 30px;
+            border-radius: 6px;
+
+            &:nth-last-child(2) {
+                filter: drop-shadow(0px 10px 50px rgba(0, 0, 0, 0.1));
+            }
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+            p {
+                border-top: 1px solid #a8a8a8;
+                margin-top: 20px;
+                padding-top: 20px;
+                font-weight: normal;
+                line-height: 32px;
+                font-size: 22px;
+                text-align: center;
+                color: var(--font-color);
+                width: 90%;
+            }
+            &:hover {
+                filter: drop-shadow(0px 10px 50px rgba(0, 0, 0, 0.1));
+                transition: all 0.4s ease-out;
+                -o-transition: all 0.4s ease-out;
+                -ms-transition: all 0.4s ease-out;
+                -moz-transition: all 0.4s ease-out;
+                -webkit-transition: all 0.4s ease-out;
+                z-index: 9;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1919px) {
+    .inner-banner-section {
+        .content-box {
+            h2 {
+                font-size: 50px;
+            }
+            p {
+                font-size: 22px;
+                line-height: normal;
+            }
+        }
+    }
+    .inspiration-section{
+        height: 700px;
+    }
+    .wo-we-are-section {
+        .inner-box {
+            .right-box p {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+    .msc-number-section {
+        .inner-box {
+            .number-box {
+                h3 {
+                    font-size: 45px;
+                }
+            }
+        }
+    }
+    .inspiration-section {
+        .right-box {
+            .accordion-item {
+                h2 {
+                    p {
+                        font-size: 18px;
+                    }
+                }
+
+                .accordion-body {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .meet-team-section {
+        .inner-box {
+            .team-box {
+                .box {
+                    h3 {
+                        font-size: 22px;
+                    }
+                    p {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+    .our-brand-section {
+        .inner-box {
+            width: 85%;
+            .box {
+                img {
+                    height: 90px;
+                }
+                p {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1599px) {
+    .inner-banner-section {
+        .content-box {
+            p {
+                font-size: 20px;
+                width: 50%;
+            }
+            h2 {
+                font-size: 46px;
+                line-height: normal;
+            }
+        }
+    }
+    .inspiration-section{
+        height: 580px;
+    }
+    .wo-we-are-section {
+        .inner-box {
+            gap: 60px;
+            .right-box {
+                p {
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+    .inspiration-section {
+        .right-box {
+            .accordion-item {
+                margin-bottom: 30px;
+                h2 {
+                    p {
+                        font-size: 16px;
+                        line-height: 22px;
+                    }
+                    .accordion-button {
+                        font-size: 32px;
+                        a {
+                            width: 36px;
+                            height: 36px;
+                        }
+                    }
+                }
+                .accordion-body {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .meet-team-section {
+        .inner-box {
+            gap: 24px;
+            .team-box {
+                .box {
+                    padding: 18px;
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .our-brand-section {
+        .inner-box {
+            .box {
+                p {
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+    .msc-number-section {
+        .inner-box {
+            gap: 40px;
+        }
+    }
+}
+@media screen and (max-width: 1439px) {
+    .wo-we-are-section {
+        .inner-box {
+            gap: 50px;
+            .right-box {
+                p {
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+    .inspiration-section{
+        height: 540px;
+    }
+    .inspiration-section {
+        .right-box {
+            .accordion-item {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .inspiration-section {
+        .right-box {
+            .accordion-item {
+                h2 {
+                    .accordion-button {
+                        font-size: 28px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1365px) {
+    .inner-banner-section {
+        .content-box {
+            h2 {
+                font-size: 40px;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+    .inspiration-section{
+        height: 500px;
+    }
+    .inspiration-section {
+        .right-box {
+            .accordion-item {
+                h2 {
+                    .accordion-button {
+                        font-size: 24px;
+                        a {
+                            width: 30px;
+                            height: 30px;
+
+                            svg {
+                                width: 24px;
+                                height: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .meet-team-section {
+        .inner-box {
+            .team-box {
+                .box {
+                    padding: 14px;
+                    h3 {
+                        font-size: 20px;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+    .our-brand-section {
+        .inner-box {
+            width: 80%;
+            .box {
+                padding: 20px;
+                img {
+                    height: 70px;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 24px;
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1279px) {
+    .inner-banner-section {
+        .content-box {
+            h2 {
+                font-size: 34px;
+            }
+            p {
+                font-size: 16px;
+                width: 60%;
+            }
+        }
+    }
+    .wo-we-are-section {
+        .inner-box {
+            align-items: start;
+            gap: 30px;
+            .right-box {
+                p {
+                    line-height: 22px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    .inspiration-section{
+        height: 560px;
+    }
+    .msc-number-section {
+        .inner-box {
+            gap: 30px;
+            .number-box {
+                flex: 0 0 20%;
+                h3 {
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+    .inspiration-section {
+        .inner-box {
+            .left-box {
+                width: 50%;
+            }
+        }
+    }
+    .meet-team-section {
+        .inner-box {
+            gap: 18px;
+            .team-box {
+                .box {
+                    h3 {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+    .our-brand-section {
+        .inner-box {
+            .box {
+                img {
+                    height: 60px;
+                }
+                p {
+                    padding-top: 15px;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1023px) {
+    .inner-banner-section {
+        &.common-section {
+            padding-top: 40px;
+        }
+        .content-box {
+            h2 {
+                font-size: 28px;
+            }
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+    .inspiration-section{
+        height: 490px;
+    }
+    .wo-we-are-section {
+        .inner-box {
+            display: block;
+            .left-box {
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .msc-number-section {
+        .inner-box {
+            .number-box {
+                flex: 0 0 30%;
+            }
+        }
+    }
+    .inspiration-section {
+        .inner-box {
+            display: block;
+            .left-box {
+                width: 100%;
+                .title-box {
+                    h2 {
+                        br {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .right-box {
+                .accordion-item {
+                    margin-bottom: 5px;
+                    h2 {
+                        .accordion-button {
+                            font-size: 22px;
+                        }
+                        p {
+                            width: 92%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .meet-team-section {
+        .inner-box {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+    .our-brand-section {
+        .inner-box {
+            width: auto;
+        }
+    }
+    .wo-we-are-section {
+        .inner-box {
+            .right-box {
+                p:last-of-type {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .msc-number-section {
+        .inner-box {
+            gap: 15px;
+        }
+
+        .number-box h3 {
+            font-size: 30px;
+        }
+    }
+    .inspiration-section{
+        height: 460px;
+    }
+    .wo-we-are-section {
+        .inner-box {
+            .right-box p {
+                font-size: 14px;
+            }
+        }
+    }
+    .inspiration-section {
+        .right-box {
+            .accordion-item {
+                h2 {
+                    p {
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
+                .accordion-body {
+                    font-size: 14px;
+                    padding: 10px 0;
+                }
+            }
+        }
+    }
+    .meet-team-section {
+        .inner-box {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    .our-brand-section {
+        .inner-box {
+            display: block;
+            .box {
+                padding: 15px;
+                margin-bottom: 15px;
+                p {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+            .box:nth-last-child(2) {
+                filter: none;
+            }
+        }
+    }
+}
+@media screen and (max-width: 639px) {
+    .inner-banner-section {
+        // background-position: 20% -10%;
+        background-size: cover;
+    }
+    .msc-number-section {
+        .inner-box {
+            .number-box {
+                flex: 0 48%;
+                h3 {
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+    .inspiration-section{
+        height: 480px;
+    }
+    .inspiration-section {
+        .inner-box {
+            .right-box {
+                .accordion-item {
+                    h2 {
+                        .accordion-button {
+                            font-size: 20px;
+                            padding-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .meet-team-section {
+        .inner-box {
+            .team-box {
+                .box {
+                    h3 {
+                        font-size: 16px;
+                    }
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    .inspiration-section {
+        .inner-box {
+            .right-box {
+                .accordion-item {
+                    h2 {
+                        .accordion-button {
+                            a {
+                                width: 24px;
+                                height: 24px;
+                                top: 1px;
+                                bottom: auto;
+                                svg {
+                                    width: 20px;
+                                    height: 20px;
+                                }
+                            }
+                        }
+                        p {
+                            width: auto;
+                            padding-right: 50px;
+                        }
+                    }
+                }
+                .accordion-body {
+                    width: auto;
+                    padding-right: 50px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 479px) {
+    .msc-number-section {
+        .inner-box {
+            .number-box {
+                flex: auto;
+                h3 {
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+    .inspiration-section{
+        height: 600px;
+    }
+    .inner-banner-section {
+        .content-box {
+            p {
+                font-size: 14px;
+                width: 90%;
+            }
+            h2 {
+                font-size: 22px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .meet-team-section {
+        .inner-box {
+            display: block;
+            .team-box {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 359px) {
+}

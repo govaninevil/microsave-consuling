@@ -1,0 +1,652 @@
+@import "fonts.css";
+@import "variables.scss";
+
+.inner-banner-section {
+    background: url("../images/contact-us-banner.jpg");
+    background-size: cover;
+}
+.Contact-us-form-section {
+    p {
+        margin-bottom: 30px;
+        font-size: 24px;
+        line-height: 35px;
+    }
+    .inner-box {
+        display: flex;
+        gap: 80px;
+        .form {
+            .form-information {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 30px;
+            }
+        }
+        .right-box {
+            img {
+                border-radius: 6px;
+            }
+        }
+    }
+}
+
+.form-group {
+    label {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 28px;
+        color: #5a5a5a;
+        margin-bottom: 10px;
+        span {
+            color: #ff0000;
+        }
+    }
+    .form-control {
+        border: 2px solid #e6e7e8;
+        border-radius: 6px;
+        height: 60px;
+        width: 100%;
+    }
+    &.textarea {
+        margin: 30px auto;
+        .form-control {
+            height: 150px;
+        }
+    }
+}
+
+.our-offices-section {
+    background: #f4f4f4;
+    .office {
+        display: flex;
+        width: 100%;
+        gap: 50px;
+    }
+    .box {
+        display: flex;
+        background: #ffffff;
+        border-radius: 6px;
+        overflow: hidden;
+        .office-address {
+            padding: 30px;
+            overflow: hidden;
+        }
+        .office-img {
+            position: relative;
+            .map-img {
+                overflow: hidden;
+                height: 100%;
+                position: relative;
+            }
+            img {
+                transition: all 0.4s ease-out;
+                height: 100%;
+                width: 100%;
+            }
+            &:hover {
+                .pin {
+                    border-radius: 20%;
+                }
+                img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+.pin {
+    width: 34px;
+    height: 34px;
+    background: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    text-align: center;
+    padding: 2px 0;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+.office-address {
+    h5 {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 38px;
+        color: var(--primary-color);
+        margin: 0 0 16px;
+    }
+    p {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 30px;
+        color: #5a5a5a;
+        margin: 0 0 30px;
+    }
+    address {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: #5a5a5a;
+    }
+    ul {
+        li {
+            margin-bottom: 16px;
+            .text {
+                font-size: 18px;
+                line-height: 25px;
+                color: #5a5a5a;
+                &:hover {
+                    color: var(--active-btn);
+                }
+            }
+            span.text {
+                color: var(--active-btn);
+            }
+        }
+    }
+}
+
+.all-branch-section {
+    .branch-location {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 50px 30px;
+    }
+    .branch-details {
+        background: #f4f4f4;
+        border-radius: 6px;
+        position: relative;
+        .branch-inner {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+            width: 100%;
+            .branch-img {
+                img {
+                    border-radius: 6px;
+                }
+            }
+        }
+        .office-address {
+            h5 {
+                font-size: 24px;
+                img {
+                    display: inline-block;
+                    vertical-align: text-bottom;
+                    margin-right: 10px;
+                }
+            }
+        }
+        .pin {
+            top: -17px;
+            background: var(--active-btn);
+            svg {
+                fill: #fff;
+            }
+        }
+        &:hover {
+            .pin {
+                top: -22px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1919px) {
+    .Contact-us-form-section {
+        p {
+            font-size: 22px;
+            line-height: 32px;
+        }
+    }
+    .form-group label {
+        font-size: 20px;
+    }
+    .office-address {
+        h5 {
+            font-size: 28px;
+        }
+        ul {
+            li {
+                margin-bottom: 10px;
+            }
+        }
+        p {
+            font-size: 22px;
+            line-height: normal;
+            margin: 0 0 20px;
+        }
+    }
+    .our-offices-section {
+        .box {
+            .office-address {
+                padding: 25px;
+            }
+        }
+    }
+  
+}
+@media screen and (max-width: 1599px) {
+    .all-branch-section {
+        .branch-location {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    .Contact-us-form-section {
+        p {
+            font-size: 18px;
+            line-height: 24px;
+            margin-bottom: 10px;
+        }
+        .inner-box {
+            gap: 60px;
+        }
+    }
+    .Contact-us-form-section {
+        .inner-box {
+            .form {
+                .form-information {
+                    gap: 25px;
+                }
+            }
+        }
+    }
+    .form-group.textarea {
+        margin: 25px auto;
+    }
+    .form-group {
+        .form-control {
+            height: 52px;
+        }
+        label {
+            font-size: 18px;
+        }
+    }
+    .our-offices-section {
+        .office {
+            gap: 30px;
+        }
+        .box {
+            .office-img {
+                .map-img {
+                    width: 250px;
+                }
+            }
+            .office-address {
+                padding: 20px;
+                ul {
+                    li {
+                        .text {
+                            &.second-num {
+                                display: block;
+                                padding-left: 57px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .office-address {
+        h5 {
+            font-size: 24px;
+            line-height: normal;
+        }
+    }
+    .all-branch-section {
+        .branch-details {
+            .office-address {
+                h5 {
+                    font-size: 22px;
+                }
+            }
+        }
+        .branch-location {
+            gap: 40px 25px;
+        }
+    }
+    .office-address {
+        p {
+            margin-bottom: 10px;
+        }
+        h5 {
+            margin-bottom: 10px;
+        }
+    }
+}
+@media screen and (max-width: 1439px) {
+    .Contact-us-form-section {
+        .inner-box {
+            .right-box {
+                img {
+                    height: 750px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1365px) {
+    .Contact-us-form-section {
+        gap: 50px;
+        .inner-box {
+            .right-box {
+                img {
+                    height: 680px;
+                }
+            }
+        }
+    }
+    .form-group {
+        .form-control {
+            height: 48px;
+        }
+
+        &.textarea {
+            .form-control {
+                height: 120px;
+            }
+        }
+    }
+    .office-address {
+        p {
+            font-size: 20px;
+        }
+        h5 {
+            font-size: 22px;
+        }
+    }
+}
+@media screen and (max-width: 1279px) {
+    .Contact-us-form-section {
+        p {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .inner-box {
+            gap: 40px;
+            .form {
+                .form-information {
+                    gap: 15px;
+                }
+            }
+            .right-box img {
+                height: 610px;
+            }
+        }
+    }
+    .form-group {
+        .form-control {
+            height: 42px;
+        }
+        label {
+            font-size: 16px;
+        }
+        &.textarea {
+            margin: 15px auto;
+        }
+    }
+    .office-address {
+        h5 {
+            font-size: 20px;
+        }
+        address {
+            font-size: 16px;
+        }
+        ul {
+            li {
+                .text {
+                    font-size: 16px;
+                }
+            }
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+    .our-offices-section {
+        .office {
+            gap: 20px;
+        }
+        .box {
+            .office-img {
+                .map-img {
+                    width: 180px;
+                }
+            }
+            .office-address {
+                ul {
+                    li {
+                        .text {
+                            &.second-num {
+                                display: block;
+                                padding-left: 51px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .all-branch-section {
+        .branch-details {
+            .office-address {
+                h5 {
+                    font-size: 20px;
+                    img {
+                        vertical-align: top;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1023px) {
+    .Contact-us-form-section {
+        .inner-box {
+            display: block;
+
+            .right-box {
+                img {
+                    height: 280px;
+                    width: 100%;
+                    object-fit: cover;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    .form-group {
+        label {
+            margin-bottom: 5px;
+        }
+        .form-control {
+            height: 38px;
+        }
+        &.textarea {
+            .form-control {
+                height: 80px;
+            }
+        }
+    }
+    .our-offices-section {
+        .office {
+            display: block;
+        }
+        .box {
+            margin-bottom: 15px;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+        .box {
+            .office-address {
+                ul {
+                    li {
+                        .text {
+                            &.second-num {
+                                display: inline-block;
+                                padding: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .office-address {
+        h5 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        p {
+            margin-bottom: 5px;
+        }
+        ul {
+            li {
+                margin-bottom: 5px;
+            }
+        }
+        address {
+            margin-bottom: 5px;
+        }
+    }
+    .all-branch-section {
+        .branch-location {
+            display: block;
+        }
+        .branch-details {
+            margin-bottom: 30px;
+            .branch-inner {
+                .branch-img {
+                    img {
+                        height: 210px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+}
+@media screen and (max-width: 639px) {
+    .inner-banner-section {
+        background-position: right;
+    }
+    .Contact-us-form-section {
+        p {
+            font-size: 14px;
+            line-height: 18px;
+        }
+        .inner-box {
+            .right-box {
+                img {
+                    height: 200px;
+                }
+            }
+            .form {
+                .form-information {
+                    display: block;
+                    .form-group {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .form-group {
+        label {
+            font-size: 14px;
+            line-height: normal;
+            margin-bottom: 0;
+        }
+        &.textarea {
+            margin: 10px auto 15px;
+        }
+    }
+    .office-address {
+        h5 {
+            font-size: 16px;
+            margin-bottom: 0;
+        }
+        p {
+            font-size: 15px;
+        }
+        address {
+            font-size: 14px;
+            line-height: normal;
+            margin-top: 10px;
+        }
+        ul {
+            li {
+                .text {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .all-branch-section {
+        .branch-details {
+            .office-address {
+                h5 {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .our-offices-section {
+        .box {
+            display: block;
+            .office-img {
+                .map-img {
+                    width: 100%;
+                    height: 140px;
+                    img {
+                        object-fit: cover;
+                    }
+                }
+            }
+            .office-address {
+                padding: 15px;
+            }
+        }
+    }
+    .all-branch-section {
+        .branch-details {
+            margin-bottom: 15px;
+            .branch-inner {
+                width: 100%;
+                padding: 15px;
+                display: block;
+                .branch-img {
+                    margin-bottom: 15px;
+                    img {
+                        height: 180px;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+            .pin {
+                top: 10px;
+                right: 10px;
+            }
+            &:hover {
+                .pin {
+                    top: 0;
+                }
+            }
+            .office-address {
+                h5 {
+                    img {
+                        margin-top: -4px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 479px) {
+}
+@media screen and (max-width: 359px) {
+}

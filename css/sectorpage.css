@@ -1,0 +1,119 @@
+@import "fonts.css";
+@import "fonts.css";
+:root {
+  --font-family: "Source Sans Pro";
+  --primary-color: #284181;
+  --secondary-color: #00bfdf;
+  --secondary-light-color: #6ecfe0;
+  --active-btn: #f79433;
+  --text-color: #5a5a5a;
+  --yellow-color: #fdb913;
+  --background-color: #f4f4f4;
+  --font-color: #5a5a5a;
+  --background: no-repeat cover center;
+  --custom-container-left: 120px;
+  --title-margin-bottom: 50px;
+  --common-space: 30px;
+  --banner-size: 740px;
+  --font-size-twenty-four: 24px;
+  --font-weight-six: 600;
+  --line-heigh-thirty: 30px;
+  --border-radius:8px;
+}
+
+.inner-banner-section {
+  background: url("../images/sector-bg.png");
+  background-position: 20% -10%;
+  background-size: cover;
+}
+
+.signature-project-section {
+  background: var(--background-color);
+}
+.signature-project-section .inner-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+.signature-project-section .inner-box .con-box {
+  background: #fff;
+  border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+}
+.signature-project-section .inner-box .con-box .box {
+  padding: 16px;
+}
+.signature-project-section .inner-box .con-box .box a {
+  font-size: 24px;
+  color: var(--font-color);
+  font-weight: var(--font-weight-six);
+  margin-top: 20px;
+  display: block;
+}
+.signature-project-section .inner-box .con-box .box .img-box {
+  overflow: hidden;
+}
+.signature-project-section .inner-box .con-box .box .img-box img {
+  width: 100%;
+}
+.signature-project-section .inner-box .con-box .box:hover img {
+  transform: scale(1.1);
+  transition: all 0.4s ease-out;
+}
+.signature-project-section .inner-box .con-box .box:hover a {
+  color: var(--active-btn);
+}
+
+@media screen and (max-width: 1919px) {
+  .signature-project-section .inner-box .con-box .box a {
+    font-size: 22px;
+    line-height: normal;
+  }
+}
+@media screen and (max-width: 1599px) {
+  .signature-project-section .inner-box {
+    gap: 25px;
+  }
+  .signature-project-section .inner-box .con-box .box a {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 1365px) {
+  .signature-project-section .inner-box .con-box .box a {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .signature-project-section .inner-box {
+    gap: 20px;
+  }
+  .signature-project-section .inner-box .con-box .box a {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .signature-project-section .inner-box {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 767px) {
+  .signature-project-section .inner-box {
+    gap: 15px;
+  }
+  .signature-project-section .inner-box .con-box .box a {
+    font-size: 14px;
+    margin-top: 12px;
+  }
+}
+@media screen and (max-width: 639px) {
+  .signature-project-section .inner-box {
+    display: block;
+  }
+  .signature-project-section .inner-box .con-box {
+    margin-bottom: 15px;
+  }
+}/*# sourceMappingURL=sectorpage.css.map */

@@ -1,0 +1,696 @@
+@import "fonts.css";
+@import "fonts.css";
+:root {
+  --font-family: "Source Sans Pro";
+  --primary-color: #284181;
+  --secondary-color: #00bfdf;
+  --secondary-light-color: #6ecfe0;
+  --active-btn: #f79433;
+  --text-color: #5a5a5a;
+  --yellow-color: #fdb913;
+  --background-color: #f4f4f4;
+  --font-color: #5a5a5a;
+  --background: no-repeat cover center;
+  --custom-container-left: 120px;
+  --title-margin-bottom: 50px;
+  --common-space: 30px;
+  --banner-size: 740px;
+  --font-size-twenty-four: 24px;
+  --font-weight-six: 600;
+  --line-heigh-thirty: 30px;
+  --border-radius:8px;
+}
+
+.inner-banner-section {
+  background: url("../images/about-banner.jpg");
+  background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-position: center center;
+  -o-background-position: center center;
+  -ms-background-position: center center;
+  -moz-background-position: center center;
+  -webkit-background-position: center center;
+  background-repeat: no-repeat;
+  -o-background-repeat: no-repeat;
+  -ms-background-repeat: no-repeat;
+  -moz-background-repeat: no-repeat;
+  -webkit-background-repeat: no-repeat;
+  position: relative;
+}
+.inner-banner-section::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(90deg, #284181 38.02%, rgba(0, 44, 156, 0) 100%);
+}
+.inner-banner-section .content-box {
+  position: relative;
+  z-index: 1;
+}
+.inner-banner-section .content-box h2 {
+  font-size: 60px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 70px;
+  margin-bottom: 16px;
+}
+.inner-banner-section .content-box p {
+  font-size: 24px;
+  color: #fff;
+  line-height: 35px;
+  width: 45%;
+  font-weight: 600;
+}
+
+.wo-we-are-section .inner-box {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+.wo-we-are-section .inner-box .left-box {
+  width: 100%;
+}
+.wo-we-are-section .inner-box .left-box img {
+  width: 100%;
+}
+.wo-we-are-section .inner-box .right-box {
+  width: 100%;
+}
+.wo-we-are-section .inner-box .right-box p {
+  color: var(--font-color);
+  font-size: 22px;
+  line-height: 32px;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+.wo-we-are-section .inner-box .right-box p a {
+  color: var(--active-btn);
+}
+.wo-we-are-section .inner-box .right-box p:last-of-type {
+  margin-bottom: 30px;
+}
+
+.msc-number-section {
+  background: #f4f4f4;
+}
+.msc-number-section .inner-box {
+  display: inline-flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.msc-number-section .inner-box .number-box {
+  flex: 0 0 22%;
+}
+.msc-number-section .inner-box .number-box h3 {
+  color: var(--secondary-color);
+  font-size: 60px;
+  font-weight: var(--font-weight-six);
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--font-color);
+}
+.msc-number-section .inner-box .number-box p {
+  color: var(--font-color);
+}
+
+.inspiration-section {
+  background: url("../images/mission-bg.png");
+  height: 720px;
+  position: relative;
+  background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-position: center center;
+  -o-background-position: center center;
+  -ms-background-position: center center;
+  -moz-background-position: center center;
+  -webkit-background-position: center center;
+  background-repeat: no-repeat;
+  -o-background-repeat: no-repeat;
+  -ms-background-repeat: no-repeat;
+  -moz-background-repeat: no-repeat;
+  -webkit-background-repeat: no-repeat;
+}
+.inspiration-section .inner-box {
+  display: flex;
+  gap: 105px;
+}
+.inspiration-section .inner-box .left-box {
+  width: 35%;
+}
+.inspiration-section .right-box .accordion-item {
+  background: transparent;
+  border: none;
+  margin-bottom: 50px;
+}
+.inspiration-section .right-box .accordion-item h2 {
+  font-size: 36px;
+  position: relative;
+}
+.inspiration-section .right-box .accordion-item h2 .accordion-button:not(.collapsed) {
+  color: #00bfdf;
+  background-color: transparent;
+  box-shadow: none;
+}
+.inspiration-section .right-box .accordion-item h2 .accordion-button {
+  font-size: 36px;
+  font-weight: 600;
+  color: #00bfdf;
+  padding: 0 0 15px;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+.inspiration-section .right-box .accordion-item h2 .accordion-button:after {
+  content: none;
+}
+.inspiration-section .right-box .accordion-item h2 .accordion-button a {
+  position: absolute;
+  right: 0;
+  bottom: -22px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #f79433;
+  color: #fff;
+  text-align: center;
+}
+.inspiration-section .right-box .accordion-item h2 .accordion-button a svg {
+  width: 32px;
+  height: 32px;
+}
+.inspiration-section .right-box .accordion-item h2 .accordion-button .bi-plus-lg {
+  display: none;
+}
+.inspiration-section .right-box .accordion-item h2 .accordion-button .bi-dash-lg {
+  display: block;
+}
+.inspiration-section .right-box .accordion-item h2 .accordion-button svg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.inspiration-section .right-box .accordion-item h2 .accordion-button.collapsed .bi-plus-lg {
+  display: block;
+}
+.inspiration-section .right-box .accordion-item h2 .accordion-button.collapsed .bi-dash-lg {
+  display: none;
+}
+.inspiration-section .right-box .accordion-item h2 .accordion-button.collapsed svg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.inspiration-section .right-box .accordion-item h2 p {
+  color: #fff;
+  font-weight: normal;
+  width: 80%;
+  font-size: 20px;
+  line-height: 27px;
+}
+.inspiration-section .right-box .accordion-item .accordion-body {
+  padding: 1rem 0;
+  color: #fff;
+  font-size: 20px;
+  width: 81%;
+}
+
+.meet-team-section .inner-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+.meet-team-section .inner-box .team-box {
+  border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+}
+.meet-team-section .inner-box .team-box .box {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background: #e6e7e8;
+  opacity: 0.9;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+}
+.meet-team-section .inner-box .team-box .box h3 {
+  color: var(--font-color);
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.meet-team-section .inner-box .team-box .box p {
+  font-size: 20px;
+  font-weight: normal;
+  color: var(--font-color);
+}
+.meet-team-section .inner-box .team-box img {
+  width: 100%;
+  transition: all 0.4s ease-out;
+}
+.meet-team-section .inner-box .team-box .inner-con {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+}
+.meet-team-section .inner-box .team-box .inner-con:hover img {
+  transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -webkit-transition: all 0.4s ease-out;
+  transform: scale(1.1);
+  overflow: hidden;
+  border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+}
+.meet-team-section .inner-box .team-box:last-of-type {
+  padding-bottom: 0;
+}
+
+.our-brand-section {
+  background: #f4f4f4;
+}
+.our-brand-section .inner-box {
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+}
+.our-brand-section .inner-box .box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 6px;
+}
+.our-brand-section .inner-box .box:nth-last-child(2) {
+  filter: drop-shadow(0px 10px 50px rgba(0, 0, 0, 0.1));
+}
+.our-brand-section .inner-box .box img {
+  display: block;
+  margin: 0 auto;
+}
+.our-brand-section .inner-box .box p {
+  border-top: 1px solid #a8a8a8;
+  margin-top: 20px;
+  padding-top: 20px;
+  font-weight: normal;
+  line-height: 32px;
+  font-size: 22px;
+  text-align: center;
+  color: var(--font-color);
+  width: 90%;
+}
+.our-brand-section .inner-box .box:hover {
+  filter: drop-shadow(0px 10px 50px rgba(0, 0, 0, 0.1));
+  transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -webkit-transition: all 0.4s ease-out;
+  z-index: 9;
+}
+
+@media screen and (max-width: 1919px) {
+  .inner-banner-section .content-box h2 {
+    font-size: 50px;
+  }
+  .inner-banner-section .content-box p {
+    font-size: 22px;
+    line-height: normal;
+  }
+  .inspiration-section {
+    height: 700px;
+  }
+  .wo-we-are-section .inner-box .right-box p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .msc-number-section .inner-box .number-box h3 {
+    font-size: 45px;
+  }
+  .inspiration-section .right-box .accordion-item h2 p {
+    font-size: 18px;
+  }
+  .inspiration-section .right-box .accordion-item .accordion-body {
+    font-size: 18px;
+  }
+  .meet-team-section .inner-box .team-box .box h3 {
+    font-size: 22px;
+  }
+  .meet-team-section .inner-box .team-box .box p {
+    font-size: 18px;
+  }
+  .our-brand-section .inner-box {
+    width: 85%;
+  }
+  .our-brand-section .inner-box .box img {
+    height: 90px;
+  }
+  .our-brand-section .inner-box .box p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 1599px) {
+  .inner-banner-section .content-box p {
+    font-size: 20px;
+    width: 50%;
+  }
+  .inner-banner-section .content-box h2 {
+    font-size: 46px;
+    line-height: normal;
+  }
+  .inspiration-section {
+    height: 580px;
+  }
+  .wo-we-are-section .inner-box {
+    gap: 60px;
+  }
+  .wo-we-are-section .inner-box .right-box p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .inspiration-section .right-box .accordion-item {
+    margin-bottom: 30px;
+  }
+  .inspiration-section .right-box .accordion-item h2 p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .inspiration-section .right-box .accordion-item h2 .accordion-button {
+    font-size: 32px;
+  }
+  .inspiration-section .right-box .accordion-item h2 .accordion-button a {
+    width: 36px;
+    height: 36px;
+  }
+  .inspiration-section .right-box .accordion-item .accordion-body {
+    font-size: 16px;
+  }
+  .meet-team-section .inner-box {
+    gap: 24px;
+  }
+  .meet-team-section .inner-box .team-box .box {
+    padding: 18px;
+  }
+  .meet-team-section .inner-box .team-box .box p {
+    font-size: 16px;
+  }
+  .our-brand-section .inner-box .box p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .msc-number-section .inner-box {
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 1439px) {
+  .wo-we-are-section .inner-box {
+    gap: 50px;
+  }
+  .wo-we-are-section .inner-box .right-box p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .inspiration-section {
+    height: 540px;
+  }
+  .inspiration-section .right-box .accordion-item {
+    margin-bottom: 20px;
+  }
+  .inspiration-section .right-box .accordion-item h2 .accordion-button {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 1365px) {
+  .inner-banner-section .content-box h2 {
+    font-size: 40px;
+  }
+  .inner-banner-section .content-box p {
+    font-size: 18px;
+  }
+  .inspiration-section {
+    height: 500px;
+  }
+  .inspiration-section .right-box .accordion-item h2 .accordion-button {
+    font-size: 24px;
+  }
+  .inspiration-section .right-box .accordion-item h2 .accordion-button a {
+    width: 30px;
+    height: 30px;
+  }
+  .inspiration-section .right-box .accordion-item h2 .accordion-button a svg {
+    width: 24px;
+    height: 24px;
+  }
+  .meet-team-section .inner-box .team-box .box {
+    padding: 14px;
+  }
+  .meet-team-section .inner-box .team-box .box h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .our-brand-section .inner-box {
+    width: 80%;
+  }
+  .our-brand-section .inner-box .box {
+    padding: 20px;
+  }
+  .our-brand-section .inner-box .box img {
+    height: 70px;
+  }
+  .our-brand-section .inner-box .box p {
+    font-size: 16px;
+    line-height: 24px;
+    width: auto;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .inner-banner-section .content-box h2 {
+    font-size: 34px;
+  }
+  .inner-banner-section .content-box p {
+    font-size: 16px;
+    width: 60%;
+  }
+  .wo-we-are-section .inner-box {
+    align-items: start;
+    gap: 30px;
+  }
+  .wo-we-are-section .inner-box .right-box p {
+    line-height: 22px;
+    margin-bottom: 10px;
+  }
+  .inspiration-section {
+    height: 560px;
+  }
+  .msc-number-section .inner-box {
+    gap: 30px;
+  }
+  .msc-number-section .inner-box .number-box {
+    flex: 0 0 20%;
+  }
+  .msc-number-section .inner-box .number-box h3 {
+    font-size: 36px;
+  }
+  .inspiration-section .inner-box .left-box {
+    width: 50%;
+  }
+  .meet-team-section .inner-box {
+    gap: 18px;
+  }
+  .meet-team-section .inner-box .team-box .box h3 {
+    font-size: 18px;
+  }
+  .our-brand-section .inner-box .box img {
+    height: 60px;
+  }
+  .our-brand-section .inner-box .box p {
+    padding-top: 15px;
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .inner-banner-section.common-section {
+    padding-top: 40px;
+  }
+  .inner-banner-section .content-box h2 {
+    font-size: 28px;
+  }
+  .inner-banner-section .content-box p {
+    font-size: 15px;
+  }
+  .inspiration-section {
+    height: 490px;
+  }
+  .wo-we-are-section .inner-box {
+    display: block;
+  }
+  .wo-we-are-section .inner-box .left-box {
+    margin-bottom: 15px;
+  }
+  .msc-number-section .inner-box .number-box {
+    flex: 0 0 30%;
+  }
+  .inspiration-section .inner-box {
+    display: block;
+  }
+  .inspiration-section .inner-box .left-box {
+    width: 100%;
+  }
+  .inspiration-section .inner-box .left-box .title-box h2 br {
+    display: none;
+  }
+  .inspiration-section .inner-box .right-box .accordion-item {
+    margin-bottom: 5px;
+  }
+  .inspiration-section .inner-box .right-box .accordion-item h2 .accordion-button {
+    font-size: 22px;
+  }
+  .inspiration-section .inner-box .right-box .accordion-item h2 p {
+    width: 92%;
+  }
+  .meet-team-section .inner-box {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .our-brand-section .inner-box {
+    width: auto;
+  }
+  .wo-we-are-section .inner-box .right-box p:last-of-type {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .msc-number-section .inner-box {
+    gap: 15px;
+  }
+  .msc-number-section .number-box h3 {
+    font-size: 30px;
+  }
+  .inspiration-section {
+    height: 460px;
+  }
+  .wo-we-are-section .inner-box .right-box p {
+    font-size: 14px;
+  }
+  .inspiration-section .right-box .accordion-item h2 p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .inspiration-section .right-box .accordion-item .accordion-body {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+  .meet-team-section .inner-box {
+    grid-template-columns: 1fr 1fr;
+  }
+  .our-brand-section .inner-box {
+    display: block;
+  }
+  .our-brand-section .inner-box .box {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  .our-brand-section .inner-box .box p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .our-brand-section .inner-box .box:nth-last-child(2) {
+    filter: none;
+  }
+}
+@media screen and (max-width: 639px) {
+  .inner-banner-section {
+    background-size: cover;
+  }
+  .msc-number-section .inner-box .number-box {
+    flex: 0 48%;
+  }
+  .msc-number-section .inner-box .number-box h3 {
+    font-size: 32px;
+  }
+  .inspiration-section {
+    height: 480px;
+  }
+  .inspiration-section .inner-box .right-box .accordion-item h2 .accordion-button {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  .meet-team-section .inner-box .team-box .box h3 {
+    font-size: 16px;
+  }
+  .meet-team-section .inner-box .team-box .box p {
+    font-size: 14px;
+  }
+  .inspiration-section .inner-box .right-box .accordion-item h2 .accordion-button a {
+    width: 24px;
+    height: 24px;
+    top: 1px;
+    bottom: auto;
+  }
+  .inspiration-section .inner-box .right-box .accordion-item h2 .accordion-button a svg {
+    width: 20px;
+    height: 20px;
+  }
+  .inspiration-section .inner-box .right-box .accordion-item h2 p {
+    width: auto;
+    padding-right: 50px;
+  }
+  .inspiration-section .inner-box .right-box .accordion-body {
+    width: auto;
+    padding-right: 50px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .msc-number-section .inner-box .number-box {
+    flex: auto;
+  }
+  .msc-number-section .inner-box .number-box h3 {
+    font-size: 26px;
+  }
+  .inspiration-section {
+    height: 600px;
+  }
+  .inner-banner-section .content-box p {
+    font-size: 14px;
+    width: 90%;
+  }
+  .inner-banner-section .content-box h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .meet-team-section .inner-box {
+    display: block;
+  }
+  .meet-team-section .inner-box .team-box {
+    margin-bottom: 15px;
+  }
+}/*# sourceMappingURL=aboutuspage.css.map */

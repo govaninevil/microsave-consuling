@@ -1,0 +1,145 @@
+@import "fonts.css";
+@import "variables.scss";
+
+.inner-banner-section {
+    background: url("../images/sector-bg.png");
+    background-position: 20% -10%;
+    background-size: cover;
+}
+
+.signature-project-section {
+    background: var(--background-color);
+    .inner-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        .con-box {
+            background: #fff;
+            border-radius: 6px;
+            -o-border-radius: 6px;
+            -ms-border-radius: 6px;
+            -moz-border-radius: 6px;
+            -webkit-border-radius: 6px;
+            .box {
+                padding: 16px;
+                a {
+                    font-size: 24px;
+                    color: var(--font-color);
+                    font-weight: var(--font-weight-six);
+                    margin-top: 20px;
+                    display: block;
+                }
+                .img-box {
+                    overflow: hidden;
+                    img {
+                        width: 100%;
+                    }
+                }
+                &:hover {
+                    img {
+                        transform: scale(1.1);
+                        transition: all 0.4s ease-out;
+                    }
+                    a {
+                        color: var(--active-btn);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1919px) {
+    .signature-project-section {
+        .inner-box {
+            .con-box {
+                .box {
+                    a {
+                        font-size: 22px;
+                        line-height: normal;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1599px) {
+    .signature-project-section {
+        .inner-box {
+            gap: 25px;
+            .con-box {
+                .box {
+                    a {
+                        font-size: 20px;
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1439px) {
+}
+@media screen and (max-width: 1365px) {
+    .signature-project-section {
+        .inner-box {
+            .con-box {
+                .box {
+                    a {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1279px) {
+    .signature-project-section {
+        .inner-box {
+            gap: 20px;
+            .con-box {
+                .box {
+                    a {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1023px) {
+    .signature-project-section {
+        .inner-box {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .signature-project-section {
+        .inner-box {
+            gap: 15px;
+            .con-box {
+                .box {
+                    a {
+                        font-size: 14px;
+                        margin-top: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 639px) {
+    .signature-project-section {
+        .inner-box {
+            display: block;
+            .con-box {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 479px) {
+}
+@media screen and (max-width: 359px) {
+}

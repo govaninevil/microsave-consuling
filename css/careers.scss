@@ -1,0 +1,932 @@
+.inner-banner-section {
+    background: url("../images/careers-banner.jpg");
+}
+
+// our-values-section
+.our-values-section {
+    background: url(../images/our-values-bg.jpg) no-repeat center #333;
+    background-size: cover;
+
+    * {
+        color: #fff;
+    }
+
+    .all-values {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 50px;
+    }
+
+    .type-value {
+        padding-left: 30px;
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: -3px;
+            bottom: 0;
+            height: 0;
+            width: 3px;
+            background-color: var(--primary-color);
+            z-index: 1;
+            transition: all .6s linear;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: -3px;
+            bottom: 0;
+            height: 100%;
+            width: 3px;
+            background-color: #fff;
+            z-index: 1;
+            transition: all .6s linear;
+        }
+
+        &:hover:after {
+            height: 100%;
+        }
+
+        &:hover .icon-title img {
+            transform: scale(.9);
+            transition: all .6s linear;
+        }
+    }
+
+    .icon-title {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 20px;
+        align-items: center;
+        margin-bottom: 20px;
+
+        img {
+            transition: all .6s linear;
+        }
+
+        h5 {
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 38px;
+        }
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 28px;
+    }
+}
+
+// open-positions-section
+.open-positions-section {
+    .search-area {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 50px;
+        margin-bottom: 50px;
+    }
+
+    .form-group {
+        svg {
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: 27px;
+            height: 27px;
+            z-index: 1;
+        }
+
+        &.search-box {
+            .form-control {
+                padding-left: 65px;
+            }
+        }
+    }
+
+    .positions-list {
+        h4 {
+            color: var(--primary-color);
+            font-weight: 600;
+            font-size: 24px;
+            margin: 0 0 16px;
+        }
+
+        .positions-details {
+            display: flex;
+
+            gap: 80px;
+
+            .apply {
+                flex: none;
+            }
+        }
+
+        .all-job {
+            border-bottom: 1px solid #dadada;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+        }
+
+        .year-location {
+            ul {
+                display: flex;
+                gap: 30px;
+                align-items: center;
+                margin-bottom: 20px;
+
+                p {
+                    font-weight: 600;
+                    font-size: 18px;
+                    color: #5a5a5a;
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-left: 10px;
+                }
+            }
+
+            p.description {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 25px;
+                color: #5a5a5a;
+            }
+        }
+    }
+}
+
+.view-all-btn {
+    display: flex;
+    justify-content: center;
+}
+
+// career-choice-section
+.career-choice-section {
+    img {
+        max-width: 100%;
+    }
+
+    .inner-box {
+        display: grid;
+        gap: 80px;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+
+        .faq-img {
+            width: 100%;
+        }
+    }
+}
+
+.faq-select {
+    .accordion-item {
+        margin-bottom: 30px;
+    }
+
+    .accordion-body {
+        border-radius: 6px;
+    }
+
+    .accordion-button {
+        background-color: #f4f4f4;
+        box-shadow: none;
+        font-weight: 600;
+        font-size: 24px;
+        padding: 25px;
+        padding-left: 90px;
+
+        &.collapsed {
+            background-color: #f4f4f4;
+            color: #5a5a5a;
+            transition: all 0.3s linear;
+        }
+    }
+
+    .accordion-item {
+        border: none;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+
+    .accordion-button {
+        background-color: var(--primary-color);
+        color: #fff;
+
+        img {
+            filter: brightness(100);
+            position: absolute;
+            left: 0;
+            padding: 20px 0 20px 20px;
+            margin: auto;
+        }
+
+        &.collapsed {
+            img {
+                filter: none;
+            }
+        }
+    }
+
+    .accordion-collapse {
+        &.collapse {
+            &.show {
+                background-color: var(--primary-color);
+                padding-left: 70px;
+                transition: all 0.3s linear;
+            }
+        }
+
+        p {
+            color: #fff;
+            margin-top: -20px;
+            position: relative;
+        }
+    }
+
+    p {
+        font-weight: 400;
+        line-height: 28px;
+    }
+
+    .accordion-button:not(.collapsed)::after {
+        filter: brightness(10);
+    }
+}
+
+.staff-quotes-section {
+    background: #f4f4f4;
+
+    .item {
+        padding: 50px;
+        background-color: #fff;
+        border-radius: 6px;
+
+        p {
+            font-weight: 400;
+            font-size: 18px;
+            color: #5a5a5a;
+            margin-bottom: 70px;
+        }
+
+        .profile {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 20px;
+            align-items: center;
+
+            .picture {
+                img {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                }
+            }
+
+            .name {
+                h6 {
+                    font-weight: 400;
+                    font-size: 22px;
+                    color: var(--primary-color);
+                }
+
+                span {
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: #5a5a5a;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1919px) {
+    .our-values-section {
+        .icon-title {
+            img {
+                height: 60px;
+            }
+            h5 {
+                font-size: 26px;
+            }
+        }
+        p {
+            font-size: 20px;
+        }
+        .all-values {
+            gap: 40px;
+        }
+    }
+    .form-group {
+        .form-control {
+            padding: 14px 20px;
+            font-size: 20px;
+        }
+    }
+    .faq-select {
+        .accordion-button {
+            font-size: 22px;
+            padding-left: 80px;
+            img {
+                width: 60px;
+            }
+        }
+        p {
+            line-height: 26px;
+        }
+        .accordion-item {
+            margin-bottom: 24px;
+        }
+        .accordion-collapse {
+            &.collapse {
+                &.show {
+                    padding-left: 60px;
+                }
+            }
+        }
+    }
+    .career-choice-section {
+        .inner-box {
+            gap: 60px;
+        }
+    }
+    .staff-quotes-section {
+        .item {
+            padding: 40px;
+            p {
+                margin-bottom: 50px;
+            }
+        }
+    }
+    .open-positions-section {
+        .positions-list {
+            h4 {
+                font-size: 22px;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 1599px) {
+    .our-values-section {
+        p {
+            font-size: 18px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .icon-title {
+            h5 {
+                font-size: 22px;
+            }
+            img {
+                height: 50px;
+            }
+        }
+        .type-value {
+            padding-left: 24px;
+        }
+    }
+    .open-positions-section {
+        .search-area {
+            margin-bottom: 30px;
+            gap: 30px;
+        }
+        .form-group {
+            svg {
+                width: 22px;
+                height: 22px;
+            }
+            &.search-box {
+                .form-control {
+                    padding-left: 55px;
+                }
+            }
+        }
+        .positions-list {
+            .all-job {
+                padding-bottom: 24px;
+                margin-bottom: 24px;
+            }
+        }
+    }
+    .form-group {
+        .form-control {
+            font-size: 18px;
+        }
+    }
+    .career-choice-section .inner-box, .open-positions-section .positions-list .positions-details {
+        gap: 50px;
+    }
+    .faq-select {
+        .accordion-button {
+            padding: 20px;
+            padding-left: 70px;
+            font-size: 20px;
+            img {
+                width: 50px;
+            }
+        }
+        .accordion-collapse {
+            &.collapse {
+                &.show {
+                    padding-left: 50px;
+                }
+            }
+        }
+        .accordion-item {
+            margin-bottom: 20px;
+        }
+    }
+    .staff-quotes-section {
+        .item {
+            padding: 30px;
+            p {
+                margin-bottom: 30px;
+                font-size: 16px;
+            }
+        }
+    }
+    
+
+}
+
+@media screen and (max-width: 1439px) {
+    .form-group {
+        .form-control {
+            padding: 12px 18px;
+        }
+        &.down-arrow {
+            &::after {
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+    .open-positions-section {
+        .search-area {
+            margin-bottom: 20px;
+        }
+        .positions-list {
+            .year-location {
+                p {
+                    &.description {
+                        font-size: 16px;
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+    }
+    .career-choice-section {
+        img {
+            width: 460px;
+        }
+    }
+    .career-choice-section .inner-box, .open-positions-section .positions-list .positions-details {
+        gap: 40px;
+    }
+    .our-values-section {
+        .icon-title {
+            img {
+                height: 40px;
+            }
+        }
+    }
+    .staff-quotes-section {
+        .item {
+            .profile {
+                .name {
+                    h6 {
+                        font-size: 20px;
+                    }
+                }
+                .picture {
+                    img {
+                        width: 70px;
+                        height: 70px;
+                    }
+                }
+            }
+        }
+    }
+    
+
+}
+
+@media screen and (max-width: 1365px) {
+    .open-positions-section {
+        .positions-list {
+            h4 {
+                font-size: 20px;
+            }
+        }
+    }
+    .staff-quotes-section {
+        .item {
+            .profile {
+                .name {
+                    h6 {
+                        font-size: 18px;
+                    }
+                    span {
+                        font-size: 16px;
+                    }
+                }
+            }
+            p {
+                margin-bottom: 24px;
+            }
+        }
+    }
+    
+
+}
+
+@media screen and (max-width: 1279px) {
+    .our-values-section {
+        .icon-title {
+            margin-bottom: 15px;
+            h5 {
+                font-size: 18px;
+            }
+        }
+        .type-value {
+            padding-left: 18px;
+        }
+        .all-values {
+            gap: 30px;
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+    .form-group {
+        .form-control {
+            font-size: 16px;
+            padding: 10px 16px;
+        }
+    }
+    .open-positions-section {
+        .form-group {
+            &.search-box {
+                .form-control {
+                    padding-left: 55px;
+                }
+            }
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+        .search-area {
+            gap: 30px;
+            margin-bottom: 15px;
+        }
+        .positions-list {
+            h4 {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+            .positions-details {
+                svg {
+                    width: 24px;
+                }
+            }
+            .year-location {
+                ul {
+                    margin-bottom: 15px;
+                }
+                p {
+                    &.description {
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .career-choice-section .inner-box, .open-positions-section .positions-list .positions-details {
+        gap: 30px;
+    }
+    .faq-select {
+        .accordion-button {
+            font-size: 18px;
+            padding: 15px;
+            padding-left: 65px;
+        }
+        .accordion-item {
+            margin-bottom: 15px;
+        }
+        .accordion-collapse {
+            p {
+                margin-top: -15px;
+            }
+            &.collapse {
+                &.show {
+                    padding-left: 45px;
+                }
+            }
+        }
+    }
+    .staff-quotes-section {
+        .item {
+            padding: 18px;
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+    .career-choice-section {
+        img {
+            width: 400px;
+        }
+    }
+    
+
+}
+
+@media screen and (max-width: 1023px) {
+    .our-values-section {
+        .all-values {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    .open-positions-section {
+        .search-area {
+            gap: 15px;
+            margin-bottom: 10px;
+        }
+        .positions-list {
+            .all-job {
+                padding-bottom: 15px;
+                margin-bottom: 15px;
+            }
+            .year-location {
+                ul {
+                    gap: 15px;
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .form-group {
+            &.search-box {
+                .form-control {
+                    padding-left: 50px;
+                }
+            }
+        }
+    }
+    .career-choice-section {
+        .inner-box {
+            display: block;
+            .faq-img {
+                display: none;
+            }
+        }
+    }
+    .form-group {
+        .form-control {
+            font-size: 14px;
+            padding: 8px 14px;
+        }
+    }
+    .inner-banner-section {
+        &.common-section {
+            background-position: right;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    .our-values-section {
+        p {
+            font-size: 13px;
+        }
+        .icon-title {
+            margin-bottom: 15px;
+            img {
+                height: 30px;
+            }
+            h5 {
+                font-size: 18px;
+                line-height: normal;
+            }
+        }
+        .type-value {
+            padding-left: 15px;
+            margin-bottom: 20px;
+            &::before {
+                width: 2px;
+            }
+        }
+        .all-values {
+            display: block;
+        }
+    }
+    .open-positions-section {
+        .search-area {
+            display: block;
+            margin-bottom: 15px;
+        }
+        .form-group {
+            svg {
+                width: 18px;
+                height: 18px;
+                left: 15px;
+            }
+            &.search-box {
+                .form-control {
+                    padding-left: 42px;
+                }
+            }
+        }
+        .positions-list {
+            .positions-details {
+                gap: 15px;
+                display: block;
+                .year-location {
+                    svg {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+            h4 {
+                font-size: 18px;
+                margin-bottom: 5px;
+            }
+            .year-location {
+                ul {
+                    margin-bottom: 15px;
+                    p {
+                        margin-left: 5px;
+                    }
+                }
+                p {
+                    &.description {
+                        font-size: 14px;
+                    }
+                }
+            }
+            .all-job {
+                padding-bottom: 15px;
+                margin-bottom: 15px;
+            }
+            .apply {
+                margin-top: 15px;
+            }
+        }
+    }
+    .form-group {
+        &.down-arrow {
+            &::after {
+                content: "";
+                top: -10px;
+                right: 18px;
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+    .faq-select {
+        p {
+            line-height: 20px;
+        }
+        .accordion-button {
+            font-size: 16px;
+            padding-left: 60px;
+            img {
+                width: 45px;
+            }
+        }
+    }
+    .staff-quotes-section {
+        .item {
+            p {
+                margin-bottom: 15px;
+            }
+            .profile {
+                .name {
+                    h6 {
+                        font-size: 16px;
+                    }
+                    span {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 639px) {
+    .open-positions-section {
+        .positions-list {
+            .apply {
+                margin-top: 10px;
+            }
+            .all-job {
+                padding-bottom: 10px;
+                margin-bottom: 10px;
+            }
+            .year-location {
+                ul {
+                    margin-bottom: 10px;
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+            .positions-details {
+                .year-location {
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+            h4 {
+                font-size: 16px;
+            }
+        }
+        .search-area {
+            margin-bottom: 10px;
+        }
+        .form-group {
+            svg {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+    .our-values-section {
+        .icon-title {
+            gap: 10px;
+            margin-bottom: 10px;
+            img {
+                height: 25px;
+            }
+        }
+    }
+    .form-group {
+        margin-bottom: 10px;
+        .form-control {
+            padding: 5px 10px;
+        }
+        &.down-arrow {
+            &::after {
+                right: 15px;
+                width: 14px;
+                height: 14px;
+                border: solid 2px #5a5a5a;
+                border-top-color: rgb(90, 90, 90);
+                border-left-color: rgb(90, 90, 90);
+                border-top-color: transparent;
+                border-left-color: transparent;
+            }
+        }
+    }
+    .faq-select {
+        .accordion-collapse {
+            p {
+                margin-top: -20px;
+            }
+            &.collapse {
+                &.show {
+                    padding-left: 30px;
+                }
+            }
+        }
+        .accordion-item {
+            margin-bottom: 10px;
+        }
+        .accordion-button {
+            padding-left: 50px;
+            img {
+                width: 40px;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 479px) {
+
+}
+
+@media screen and (max-width: 390px) {
+
+}
+
+@media screen and (max-width: 359px) {
+
+}
